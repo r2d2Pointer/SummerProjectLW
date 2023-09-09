@@ -1,0 +1,46 @@
+<h1> Live Docker Status</h1>
+<script>
+function lw(){
+            
+            var xhr = new XMLHttpRequest();
+	
+            xhr.open("GET" , "/cgi-bin/docker.py",true);
+            xhr.send();
+            xhr.onreadystatechange = function() {
+		    //4: if response c
+		    if(xhr.readyState ==4 ){
+			    document.getElementById("p1").innerHTML=this.responseText;}
+             }
+}
+function lw1(){
+
+            var xhr = new XMLHttpRequest();
+            var mycmd=document.getElementById("in2").value;
+            xhr.open("GET" , "/cgi-bin/dockerlaunch2.py?d="+mycmd,true);
+            xhr.send();
+            xhr.onreadystatechange = function() {
+                    //4: if response c
+                    if(xhr.readyState ==4 ){
+                            document.getElementById("p2").innerHTML=this.responseText;}
+             }
+}
+
+</script>
+<body>
+<p id="p1"><b>Docker Status coming........</b></p>
+<button onclick="lw()"><b>Refresh</b> </button><br>
+<b>---------------------------------------------------------------</b>
+<br>
+<h><b>Want to launch a new docker container.......</b><h><br>
+<br><b>Enter the image name :</b>  
+<form >
+                 <input id="in2" name="d"/ >
+
+</form>
+                <br>
+<button onclick="lw1()">Launch </button><br>
+<p id="p2">.................</p>
+</body>
+<br>
+<form action= HTTP://'your_ip'/menu.html>
+<input type='submit' value='Back to Main menu'></form>

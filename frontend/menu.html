@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main4.css">
+    <title>Menu</title>
+</head>
+<body>
+    <div id="container">
+        <div class="m">Menu Driven WebApp</div>
+        <form action="HTTP://'your_ip'your/cgi-bin/date.py">
+            <button type="submit">1. DATE</button>
+        </form>
+        <form action="HTTP://'your_ip'/cgi-bin/cal.py">
+            <button type="submit">2. CAL</button>
+        </form>
+        <form action="HTTP://'your_ip'/cgi-bin/ip.py">
+            <button type="submit">3. Get the IP..</button>
+        </form>
+        <form action="HTTP://'your_ip'/cgi-bin/mail.py">
+		<label for="email"><b>4. Enter the mail to which you want to send the message:</b></label>
+            <input type="email" id="email" name="a" required><br>
+            <label for="message">Enter the message:</label>
+            <input type="text" id="message" name="b" required><br>
+             <input type="submit" value="Send" name="submit">
+	</form>
+        <form action="HTTP://'your_ip'/cgi-bin/ec.py">
+            <button type="submit">5. Want to launch an EC2 instance?</button>
+        </form>
+        <form action="HTTP://'your_ip'/cgi-bin/number1.py">
+            <button type="submit">6. Get to know the number of instances?</button>
+        </form>
+        <form action="HTTP://'your_ip'/cgi-bin/bucket.py">
+		<label for="bucketName"><b>7. Want to create a S3 bucket?</b><br>
+            Enter the Bucket name:</label>
+            <input type="text" id="bucketName" name="c" required><br>
+            <input type="submit" value="Create" name="submit">
+        </form>
+	 <form action="HTTP://'your_ip'/cgi-bin/upload2.py" method="post" enctype="multipart/form-data">
+		 <b>8. Upload a file to s3 bucket</b> <input type="file" name="fileToUpload" id="fileToUpload"><br>
+		 <b> Enter the Bucket name:</b> <input type="text" id="bucketName" name="c" required><br>
+                                               <input type="submit" value="Upload" name="submit">
+         </form>
+         <form action="HTTP://'your_ip'/cgi-bin/whatsapp.py">
+		 <label for="whatsappMessage"><b>9. Send the message to WhatsApp.</b><br>
+            Enter the message:</label>
+            <input type="text" id="whatsappMessage" name="q" required>
+	    <br>
+             <input type="submit" value="Send" name="submit">
+	 </form>
+	<form action="HTTP://'your_ip'/ajax.html">
+		<button type="submit"><b>10. Live Linux Compiler</button><br>
+        </form>
+	<form action="HTTP://'your_ip'/docker.html">
+		<button type="submit"><b>11.Get Your Docker Status</button><br><br>
+        </form>
+	<form action="HTTP://'your_ip'/cgi-bin/wiki.py">
+                <label for="wiki"><b>12. Use Our LLM Model Integrated With Langchain That Answers questions from wikipedia. </b><br>
+		 Enter the Prompt:</label>
+                           <input type="text" id="prompt" name="c" required>
+            <br>
+                   <input type="submit" value="Send" name="submit">
+	</form>
+	<form action="HTTP://'your_ip'/cgi-bin/web.html" method="POST" enctype="multipart/form-data">
+                 <b>13. Configure your webserver...... </b> <input type="file" name="fileToUpload" id="fileToUpload"><br>
+                      <input type="submit" value="Upload" name="submit">
+         </form>
+
+    </div>
+</body>
+</html>

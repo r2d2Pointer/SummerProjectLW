@@ -1,0 +1,27 @@
+<h1> Live Linux Compiler</h1>
+<script>
+function lw(){
+            
+            var xhr = new XMLHttpRequest();
+	    var mycmd=document.getElementById("in1").value;
+            xhr.open("GET" , "/cgi-bin/live.py?c="+mycmd,true);
+            xhr.send();
+            xhr.onreadystatechange = function() {
+		    //4: if response c
+		    if(xhr.readyState ==4 ){
+			    document.getElementById("p1").innerHTML=this.responseText;}
+             }
+}
+</script>
+<body>
+	<form  >
+		 <input id="in1" onkeyup=lw()  name="c"/ >
+	      
+	</form>
+		<br>
+<p id="p1">i am comming........</p>
+<button onclick="lw()">click me </button><br>
+
+</body>
+<form action= HTTP://'your_ip'/menu.html>
+<input type='submit' value='Back to Main menu'></form>

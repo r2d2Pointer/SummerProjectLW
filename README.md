@@ -30,11 +30,7 @@ Our project leverages LangChain, an open-source framework, to supercharge our we
 
 To get started with this project, follow these steps:
 
-1. Clone the repository to your local machine:
-
-   ```
-   https://github.com/krishabh080/menu-based-cgi-program.git
-   ```
+1. Clone the repository to your local machine.
 
 2. Set up your web server (httpd) on an AWS EC2 instance for the frontend.
 
@@ -60,7 +56,7 @@ Please ensure that you have these dependencies installed and configured before r
 
 If you have any questions or feedback, feel free to reach out to us:
 
-- Email: KRISHABH080@gmail.com
+- Email: rrsahani21@gmail.com
 
 
 Thank you for checking out our project, and we hope you find it useful and inspiring for your own web development and integration endeavors.
